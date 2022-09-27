@@ -1,6 +1,6 @@
-	To start the application run the following cmd command in the src/Api folder:
-		dotnet run
+	To start the application run the following cmd command in CompanyAPI folder:
+		docker-compose up
 	
-	The application will start on the port localhost:5000
+	The application will start on localhost:5000
   
 	Swagger runs on: http://localhost:5000/swagger/index.html

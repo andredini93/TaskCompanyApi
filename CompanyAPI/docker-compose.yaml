@@ -6,24 +6,4 @@ services:
     build:
       context: .
     ports:
-      - "20000:80"
-    networks:
-      - marvel-network
-  prometheus:
-    build:
-      context: ./prometheus
-      dockerfile: Dockerfile
-      args:
-        version: 1
-    image: prometheus-local
-    restart: always
-    ports: 
-      - 9090:9090
-    networks:
-      - marvel-network
-    volumes: 
-      - './prometheus/data:/data'
-
-networks: 
-    marvel-network:
-        driver: bridge
+      - "5000:80"
