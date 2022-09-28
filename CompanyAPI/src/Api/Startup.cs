@@ -12,6 +12,7 @@ using Microsoft.OpenApi.Models;
 using Prometheus;
 using Repository;
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Net.Mime;
 using System.Reflection;
@@ -19,6 +20,7 @@ using System.Text.Json;
 
 namespace Api
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration)

@@ -1,0 +1,7 @@
+﻿{
+  "stryker-config": {
+    "project": "Api.csproj",
+    "reporters": [ "progress", "html", "json" ],
+    "ignore-methods": [ "ToString", "LogInformation", "LogError", "Append" ]
+  }
+}
