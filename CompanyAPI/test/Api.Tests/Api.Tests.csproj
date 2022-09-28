@@ -23,7 +23,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\Api\Api.csproj" />
-        <ProjectReference Include="..\..\src\Model\Model.csproj" />
+        <ProjectReference Include="..\..\src\Model\Domain.csproj" />
     </ItemGroup>
 
 </Project>
