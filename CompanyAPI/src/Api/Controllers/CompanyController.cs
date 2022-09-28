@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Model;
-using Model.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

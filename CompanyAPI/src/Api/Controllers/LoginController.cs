@@ -1,8 +1,8 @@
 ﻿using Api.Authentication;
+using Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Model.Interfaces;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -70,7 +70,7 @@ namespace Api.Controllers
                 return CustomResponse(new
                 {
                     authenticated = false,
-                    message = "Falha ao autenticar"
+                    message = "Authentication failed"
                 });
             }
         }

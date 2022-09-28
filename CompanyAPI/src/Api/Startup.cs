@@ -1,4 +1,5 @@
 using Api.Configuration;
+using Api.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
@@ -124,6 +125,7 @@ namespace Api
                 .AllowAnyMethod()
                 .AllowAnyHeader());
 
+            app.UseMiddleware(typeof(ExceptionMiddleware));
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });

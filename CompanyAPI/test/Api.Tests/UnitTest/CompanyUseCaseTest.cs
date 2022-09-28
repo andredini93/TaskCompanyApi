@@ -1,7 +1,8 @@
-﻿using Application.UseCase;
+﻿using Application.Interfaces;
+using Application.Notifier;
+using Application.UseCases;
 using AutoFixture;
 using Model;
-using Model.Interfaces;
 using NSubstitute;
 using Repository.Interfaces;
 using System.Collections.Generic;

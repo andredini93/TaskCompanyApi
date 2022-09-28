@@ -1,8 +1,8 @@
-﻿using Model.Interfaces;
+﻿using Application.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Model
+namespace Application.Notifier
 {
     public class Notifier : INotifier
     {
@@ -23,7 +23,7 @@ namespace Model
             return _notifications;
         }
 
-        public bool CheckNotificacao()
+        public bool CheckNotification()
         {
             return _notifications.Any();
         }

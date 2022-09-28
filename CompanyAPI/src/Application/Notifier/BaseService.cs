@@ -1,9 +1,8 @@
-﻿using FluentValidation;
+﻿using Application.Interfaces;
+using FluentValidation;
 using FluentValidation.Results;
-using Model;
-using Model.Interfaces;
 
-namespace Repository.Services
+namespace Application.Notifier
 {
     public abstract class BaseService
     {
@@ -25,17 +24,6 @@ namespace Repository.Services
         protected void Notifier(string mensagem)
         {
             _notifier.Handle(new Notification(mensagem));
-        }
-
-        protected bool ExecuteValidation<TV, TE>(TV validation, TE entity) where TV : AbstractValidator<TE>
-        {
-            var validator = validation.Validate(entity);
-
-            if (validator.IsValid) return true;
-
-            Notifier(validator);
-
-            return false;
         }
     }
 }

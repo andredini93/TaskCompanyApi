@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Interfaces;
+using Application.Notifier;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Model;
-using Model.Interfaces;
 using System.Linq;
 
 namespace Api.Controllers
@@ -18,7 +18,7 @@ namespace Api.Controllers
 
         protected bool ValidOperation()
         {
-            return !_notifier.CheckNotificacao();
+            return !_notifier.CheckNotification();
         }
 
         protected ActionResult CustomResponse(object result = null)

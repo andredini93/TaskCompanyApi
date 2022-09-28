@@ -1,8 +1,7 @@
 ﻿using Application.Interfaces;
-using Application.UseCase;
+using Application.Notifier;
+using Application.UseCases;
 using Microsoft.Extensions.DependencyInjection;
-using Model;
-using Model.Interfaces;
 using Repository;
 using Repository.Interfaces;
 

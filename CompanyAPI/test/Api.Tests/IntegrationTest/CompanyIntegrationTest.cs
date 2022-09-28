@@ -1,7 +1,6 @@
 ﻿using Api.Tests.IntegrationTest.Config;
 using Api.Tests.IntegrationTest.Config2;
 using Api.ViewModels;
-using Model;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;

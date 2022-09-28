@@ -1,12 +1,11 @@
 ﻿using Application.Interfaces;
+using Application.Notifier;
 using Model;
-using Model.Interfaces;
 using Repository.Interfaces;
-using Repository.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Application.UseCase
+namespace Application.UseCases
 {
     public class CompanyUseCase : BaseService, ICompanyUseCase
     {

@@ -1,5 +1,4 @@
 ﻿using Api.ViewModels;
-using Model;
 using Xunit;
 
 namespace Api.Tests.IntegrationTest.TestData

@@ -1,4 +1,4 @@
-﻿namespace Model
+﻿namespace Application.Notifier
 {
     public class Notification
     {

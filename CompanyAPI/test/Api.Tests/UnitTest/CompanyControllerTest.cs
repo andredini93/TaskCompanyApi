@@ -1,13 +1,13 @@
 ﻿using Api.Controllers;
 using Api.ViewModels;
 using Application.Interfaces;
+using Application.Notifier;
 using AutoFixture;
 using AutoMapper;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Model;
-using Model.Interfaces;
 using NSubstitute;
 using System.Collections.Generic;
 using Xunit;

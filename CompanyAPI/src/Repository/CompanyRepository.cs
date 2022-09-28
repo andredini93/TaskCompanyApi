@@ -1,19 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using Model;
-using Model.Interfaces;
 using Repository.Interfaces;
-using Repository.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class CompanyRepository : BaseService, ICompanyRepository
+    public class CompanyRepository : ICompanyRepository
     {
         protected readonly CompanyContext Db;
 
-        public CompanyRepository(CompanyContext db, INotifier notifier) : base(notifier)
+        public CompanyRepository(CompanyContext db)
         {
             Db = db;
         }
