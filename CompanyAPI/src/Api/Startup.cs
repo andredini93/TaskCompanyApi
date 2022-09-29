@@ -35,7 +35,8 @@ namespace Api
         {
 
             services.ResolveAuthorization(Configuration);
-            services.AddDbContext<CompanyContext>(x => x.UseInMemoryDatabase("InMemoryDb"));
+            services.AddDbContext<CompanyContext>(c =>
+                c.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
