@@ -6,9 +6,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A1445F54-733
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "src\Api\Api.csproj", "{B9472060-459F-4DEA-92B9-2F1547FBF9D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Model\Domain.csproj", "{3DC144E2-55DD-49A7-B103-30C1FE995637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{3DC144E2-55DD-49A7-B103-30C1FE995637}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Repository\Infrastructure.csproj", "{5AB2D174-12D9-4879-9CCF-0B290C717373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{5AB2D174-12D9-4879-9CCF-0B290C717373}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{752403DB-82F5-496B-B2D9-BBF2C284BCD4}"
 EndProject
